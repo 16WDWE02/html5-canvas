@@ -7,8 +7,21 @@ var image = new Image();
 image.src = 'http://loremflickr.com/200/200';
 
 image.onload = function() {
-
 	// Image is ready to be manipulated / used
 	photoCtx.drawImage( image, 0, 0 );
-
 }
+
+
+Caman('#filters', 'img/cat.jpeg', function(){
+
+	this.sepia();
+	this.render();
+
+});
+
+
+
+
+
+
+
